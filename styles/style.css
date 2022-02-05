@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --header-primary-background-color: #121212;
+    --header-primary-text-color: #fbfbfb;
+    --primary-headings-color: #fbfbfb;
+    --secondary-text-color: #121212;
+    --get-started-button-background-color: #c1272d;
+    --get-started-button-background-color-hover: #ff4d3e;
+    --main-section-background-color: #fbfbfb;
+    font-size: 16px;
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* end of reset css */
+.lazy-ui-header-container {
+    padding: 1rem 4rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--header-primary-background-color);
+}
+
+.lazy-ui-header-logo {
+    width: 15rem;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.lazy-ui-logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.lazy-ui-logo-title:hover {
+    color: lightblue;
+}
+
+.lazy-ui-logo-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.lazy-ui-logo-text {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.lazy-ui-header {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lazy-ui-logo-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--header-primary-text-color);
+}
+
+.lazy-ui-logo-caption {
+    font-size: 0.6rem;
+    color: var(--header-primary-text-color);
+}
+
+.lazy-ui-navbar {
+    margin-left: auto;
+}
+
+.lazy-ui-navbar-list {
+    display: flex;
+    align-items: center;
+}
+
+.lazy-ui-navbar-item {
+    list-style: none;
+}
+
+.lazy-ui-navbar-item a {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--header-primary-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lazy-ui-navbar-item a:hover {
+    color: lightblue;
+}
+
+.container {
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-section-background-color);
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    /* font-size: rem; */
+}
+
+.container>h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    /* shadow to text */
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.container>h2 {
+    font-weight: bold;
+}
+
+.container>h3 {
+    font-weight: bold;
+}
+
+.lazy-ui-home-buttons-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.lazy-ui-home-buttons-layout .lazy-get-started {
+    /* button */
+    text-decoration: none;
+    background-color: var(--get-started-button-background-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.lazy-ui-home-buttons-layout .lazy-get-started:hover {
+    background-color: var(--get-started-button-background-color-hover);
+}
+
+.lazy-ui-home-buttons-layout .lazy-github-button {
+    /* button */
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.lazy-ui-home-buttons-layout .lazy-github-button:hover {
+    background-color: gray;
+}
+
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 0.7rem;
+    }
+}
