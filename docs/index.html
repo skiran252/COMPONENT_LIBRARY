@@ -27,10 +27,8 @@
       <div class="lazy-ui-header-container">
         <div class="lazy-ui-header-logo">
           <a href="/" class="lazy-ui-logo">
-            <!-- <img src="images/logo.png" alt="Lazy UI Logo" class="lazy-ui-logo-img" /> -->
             <div class="lazy-ui-logo-text">
               <div class="lazy-ui-logo-title">Lazy UI</div>
-              <!-- <div class="lazy-ui-logo-caption">A COMPONENT LIBRARY</div> -->
             </div>
           </a>
         </div>
@@ -48,19 +46,11 @@
         <h3 class="sidebar-header">COMPONENTS</h3>
         <nav class="docs-navbar">
           <ul class="docs-navbar-list">
-            <li class="docs-navbar-item" target="alert">
-              <a href="#" target="alert">Alerts</a>
+            <li class="docs-navbar-item">
+              <a class="navbar-link" href="#alert">Alerts</a>
             </li>
-            <li class="docs-navbar-item" target="avatar">
-              <a href="#" target="avatar">Avatar</a>
-            </li>
-
-            <li class="docs-navbar-item" target="badge">
-              <a href="#" target="avatar">Badge</a>
-            </li>
-
-            <li class="docs-navbar-item" target="buttons">
-              <a href="#" target="avatar">Button</a>
+            <li class="docs-navbar-item">
+                <a class="navbar-link" href="#avatar">Alerts</a>
             </li>
           </ul>
         </nav>
@@ -73,6 +63,45 @@
                 <link rel="stylesheet" href="https://lazy-ui.netlify.app/styles/index.css"/>
             </code>
         </pre>
+
+        <div class="component-container" id="alert">
+            <h1>Alerts</h1>
+            <p>
+                The alert component can be used to provide information to your users such as success or error
+                messages, but
+                also highlighted information complementing the normal flow of paragraphs and headers on a page.
+            </p>
+
+            <div class="alert alert-success"><strong>Success!</strong> This alert is a success alert.</div>
+            <div class="alert alert-warning"><strong>Warning!</strong> This alert is a warning alert.</div>
+            <div class="alert alert-danger"><strong>Danger!</strong> This alert is a danger alert.</div>
+            <div class="alert alert-info"><strong>Info!</strong> This alert is an info alert.</div>
+
+            <p>
+                To use simply add <span class="code-highlight">.alert</span>
+                <span class="code-highlight">.alert-success</span>, 
+                <span class="code-highlight">.alert-warning</span>,
+                <span class="code-highlight">.alert-danger</span> or
+                <span class="code-highlight">.alert-info</span>
+                to the element you want to be an alert.
+            </p>
+            <pre>
+                <code class="language-html">
+                    <div class="alert alert-success">
+                        <strong>Success!</strong> This alert is a success alert.
+                    </div>
+                    <div class="alert alert-warning">
+                        <strong>Warning!</strong> This alert is a warning alert.
+                    </div>
+                    <div class="alert alert-danger">
+                        <strong>Danger!</strong> This alert is a danger alert.
+                    </div>
+                    <div class="alert alert-info">
+                        <strong>Info!</strong> This alert is an info alert.
+                    </div>
+                </code>
+            </pre>
+        </div> <!-- end of -->
       </div>
       <!-- end of .main-container -->
     </div>

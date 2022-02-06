@@ -1,3 +1,5 @@
+@import url(./components/alert.css);
+
 * {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
 }
@@ -7,8 +9,12 @@ h3 {
     text-align: left;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .docs-layout {
-    padding: 0 10vw;
+    padding: 0 5rem;
     display: flex;
     width: 100%;
     background-color: white;
@@ -23,28 +29,31 @@ h3 {
 }
 
 .docs-navbar-list .docs-navbar-item {
-    display: block;
-    padding: 0.5rem 1rem;
     list-style: none;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    margin: 0.5rem 0;
 }
 
 .docs-navbar-list .docs-navbar-item:hover {
-    cursor: pointer;
     background-color: #e9ecef;
 }
 
-.docs-navbar-list .docs-navbar-item a {
-    font-size: 1.2rem;
+.docs-navbar-list .docs-navbar-item .navbar-link {
+    display: block;
     text-decoration: none;
-    color: black;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
     font-weight: bolder;
-    width: 100%;
+    color: black;
+    border-radius: 0.25rem;
+    cursor: pointer;
 }
 
-.docs-navbar-list .active a {
+.docs-navbar-list .docs-navbar-item .navbar-link:hover {
+    width: 100%;
+    background-color: #e9ecef;
+}
+
+.docs-navbar-list .docs-navbar-item .active {
     color: #007bff;
 }
 
@@ -59,7 +68,7 @@ h3 {
     flex-direction: column;
     gap: 2rem;
     height: calc(100vh - 3rem);
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
     width: 100%;
     border-right: 2px solid #e9ecef;
 }
@@ -99,6 +108,14 @@ h3 {
 }
 
 
+/* end of containers */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        font-size: 0.8rem;
+    }
+}
+
+
 /* media queries */
 @media screen and (max-width: 768px) {
     .docs-layout {
@@ -127,6 +144,6 @@ h3 {
     }
 
     .docs-layout {
-        padding: 0 5vw;
+        padding: 0 2rem;
     }
 }
