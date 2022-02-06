@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy UI Documentation</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header for Lazy UI with navigation links -->
+    <header class="lazy-ui-header">
+      <div class="lazy-ui-header-container">
+        <div class="lazy-ui-header-logo">
+          <a href="/" class="lazy-ui-logo">
+            <!-- <img src="images/logo.png" alt="Lazy UI Logo" class="lazy-ui-logo-img" /> -->
+            <div class="lazy-ui-logo-text">
+              <div class="lazy-ui-logo-title">Lazy UI</div>
+              <!-- <div class="lazy-ui-logo-caption">A COMPONENT LIBRARY</div> -->
+            </div>
+          </a>
+        </div>
+        <nav class="lazy-ui-navbar">
+          <ul class="lazy-ui-navbar-list">
+            <li class="lazy-ui-navbar-item">
+              <a href="/">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="docs-layout">
+      <aside>
+        <h3 class="sidebar-header">COMPONENTS</h3>
+        <nav class="docs-navbar">
+          <ul class="docs-navbar-list">
+            <li class="docs-navbar-item" target="alert">
+              <a href="#" target="alert">Alerts</a>
+            </li>
+            <li class="docs-navbar-item" target="avatar">
+              <a href="#" target="avatar">Avatar</a>
+            </li>
+
+            <li class="docs-navbar-item" target="badge">
+              <a href="#" target="avatar">Badge</a>
+            </li>
+
+            <li class="docs-navbar-item" target="buttons">
+              <a href="#" target="avatar">Button</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-container">
+        <h1>Getting Started</h1>
+        <p>To use the library add below snipped in your code</p>
+        <pre>
+            <code class="language-html">
+                <link rel="stylesheet" href="https://lazy-ui.netlify.app/styles/index.css"/>
+            </code>
+        </pre>
+      </div>
+      <!-- end of .main-container -->
+    </div>
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>

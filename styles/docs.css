@@ -1,0 +1,132 @@
+* {
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+
+.docs-layout {
+    padding: 0 10vw;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.docs-layout aside {
+    flex-basis: 15%;
+    height: calc(100vh - 5rem);
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-right: 1px solid #e9ecef;
+}
+
+.docs-navbar-list .docs-navbar-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.docs-navbar-list .docs-navbar-item:hover {
+    cursor: pointer;
+    background-color: #e9ecef;
+}
+
+.docs-navbar-list .docs-navbar-item a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.docs-navbar-list .active a {
+    color: #007bff;
+}
+
+.sidebar-header {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.docs-layout .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: calc(100vh - 3rem);
+    padding: 2rem 4rem;
+    width: 100%;
+    border-right: 2px solid #e9ecef;
+}
+
+.docs-layout .main-container .component-container {
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    border-top: 5px solid #e9ecef;
+}
+
+.docs-layout .main-container .component-container h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 0.5rem 0;
+}
+
+.docs-layout .main-container .component-container h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0.5rem 0;
+}
+
+.docs-layout .main-container .component-container p {
+    font-size: large;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.component-container .code-highlight {
+    background-color: #e3e7ec;
+    font-family: 'consolas', 'courier new', courier, monospace;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.docs-layout main {
+    flex-basis: 80%;
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .docs-layout {
+        flex-direction: column;
+    }
+
+    .docs-layout aside {
+        flex-basis: 0;
+        height: auto;
+        border-right: none;
+    }
+
+    .docs-layout .main-container {
+        padding: 1rem;
+        border-right: none;
+        overflow-y: scroll;
+    }
+
+    .docs-navbar-list .docs-navbar-item {
+        margin: 0.5rem 0;
+    }
+
+
+    .docs-layout main {
+        flex-basis: 95%;
+    }
+
+    .docs-layout {
+        padding: 0 5vw;
+    }
+}
