@@ -9,7 +9,7 @@ h3 {
 }
 
 .docs-layout {
-    padding: 0 10vw;
+    padding: 0 5rem;
     display: flex;
     width: 100%;
     background-color: white;
@@ -60,7 +60,7 @@ h3 {
     flex-direction: column;
     gap: 2rem;
     height: calc(100vh - 3rem);
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
     width: 100%;
     border-right: 2px solid #e9ecef;
 }
@@ -100,6 +100,14 @@ h3 {
 }
 
 
+/* end of containers */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        font-size: 0.8rem;
+    }
+}
+
+
 /* media queries */
 @media screen and (max-width: 768px) {
     .docs-layout {
@@ -128,6 +136,6 @@ h3 {
     }
 
     .docs-layout {
-        padding: 0 5vw;
+        padding: 0 2rem;
     }
 }
