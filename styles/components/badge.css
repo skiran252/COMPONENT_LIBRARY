@@ -1,0 +1,39 @@
+:root {
+    --badge-text-color: #fff;
+    --badge-background-color: green;
+}
+.badge {
+    position: absolute;
+    padding: 0.25rem 0.4rem;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50%;
+    color: var(--badge-text-color);
+    background-color: var(--badge-background-color);
+}
+
+.badge-container i {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.badge-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.badge-top {
+    top: -0.15rem;
+    right: -0.15rem;
+}
+
+.badge-bottom {
+    bottom: 0.1rem;
+    right: 0.1rem;
+}
+
+/* end of badge */

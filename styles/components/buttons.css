@@ -1,0 +1,88 @@
+:root {
+    --button-success-color: #28a745;
+    --button-success-color-hover: #218838;
+    --button-primary-color: #007bff;
+    --button-primary-color-hover: #0069d9;
+    --button-danger-color: #dc3545;
+    --button-danger-color-hover: #bd2130;
+    --button-warning-color: #ffc107;
+    --button-warning-color-hover: #ffb300;
+    --button-info-color: #17a2b8;
+    --button-info-color-hover: #138496;
+    --button-secondary-color: #6c757d;
+    --button-secondary-color-hover: #5a6268;
+    --button-success-color-hover-border: #218838;
+    --button-primary-color-hover-border: #0069d9;
+    --button-danger-color-hover-border: #bd2130;
+    --button-warning-color-hover-border: #ffb300;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--button-primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-primary-color-hover);
+}
+
+.btn-secondary {
+    background-color: var(--button-secondary-color);
+    color: #fff;
+    border-color: var(--button-secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--button-secondary-color-hover);
+}
+
+.btn-success {
+    background-color: var(--button-success-color);
+    color: #fff;
+    border-color: var(--button-success-color);
+}
+
+.btn-success:hover {
+    background-color: var(--button-success-color-hover);
+}
+
+.btn-danger {
+    background-color: var(--button-danger-color);
+    color: #fff;
+    border-color: var(--button-danger-color-hover);
+}
+
+.btn-danger:hover {
+    background-color: var(--button-danger-color-hover);
+}
+
+.btn-warning {
+    background-color: var(--button-warning-color);
+    color: #000;
+    border-color: var(--button-warning-color-hover);
+}
+
+.btn-warning:hover {
+    background-color: var(--button-warning-color-hover);
+}
+
+.btn-info {
+    background-color: var(--button-info-color);
+    color: #fff;
+    border-color: var(--button-info-color-hover);
+}
+
+.btn-info:hover {
+    background-color: var(--button-info-color-hover);
+}

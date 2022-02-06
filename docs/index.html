@@ -50,7 +50,13 @@
               <a class="navbar-link" href="#alert">Alerts</a>
             </li>
             <li class="docs-navbar-item">
-                <a class="navbar-link" href="#avatar">Alerts</a>
+              <a class="navbar-link" href="#avatar">Avatar</a>
+            </li>
+            <li class="docs-navbar-item">
+              <a class="navbar-link" href="#badge">Badge</a>
+            </li>
+            <li class="docs-navbar-item">
+              <a class="navbar-link" href="#buttons">Buttons</a>
             </li>
           </ul>
         </nav>
@@ -65,27 +71,25 @@
         </pre>
 
         <div class="component-container" id="alert">
-            <h1>Alerts</h1>
-            <p>
-                The alert component can be used to provide information to your users such as success or error
-                messages, but
-                also highlighted information complementing the normal flow of paragraphs and headers on a page.
-            </p>
+          <h1>Alerts</h1>
+          <p>
+            The alert component can be used to provide information to your users such as success or error messages, but
+            also highlighted information complementing the normal flow of paragraphs and headers on a page.
+          </p>
 
-            <div class="alert alert-success"><strong>Success!</strong> This alert is a success alert.</div>
-            <div class="alert alert-warning"><strong>Warning!</strong> This alert is a warning alert.</div>
-            <div class="alert alert-danger"><strong>Danger!</strong> This alert is a danger alert.</div>
-            <div class="alert alert-info"><strong>Info!</strong> This alert is an info alert.</div>
+          <div class="alert alert-success"><strong>Success!</strong> This alert is a success alert.</div>
+          <div class="alert alert-warning"><strong>Warning!</strong> This alert is a warning alert.</div>
+          <div class="alert alert-danger"><strong>Danger!</strong> This alert is a danger alert.</div>
+          <div class="alert alert-info"><strong>Info!</strong> This alert is an info alert.</div>
 
-            <p>
-                To use simply add <span class="code-highlight">.alert</span>
-                <span class="code-highlight">.alert-success</span>, 
-                <span class="code-highlight">.alert-warning</span>,
-                <span class="code-highlight">.alert-danger</span> or
-                <span class="code-highlight">.alert-info</span>
-                to the element you want to be an alert.
-            </p>
-            <pre>
+          <p>
+            To use simply add <span class="code-highlight">.alert</span>
+            <span class="code-highlight">.alert-success</span>, <span class="code-highlight">.alert-warning</span>,
+            <span class="code-highlight">.alert-danger</span> or
+            <span class="code-highlight">.alert-info</span>
+            to the element you want to be an alert.
+          </p>
+          <pre>
                 <code class="language-html">
                     <div class="alert alert-success">
                         <strong>Success!</strong> This alert is a success alert.
@@ -101,8 +105,129 @@
                     </div>
                 </code>
             </pre>
-        </div> <!-- end of -->
-      </div>
+        </div>
+        <div class="component-container" id="avatar">
+          <h1>Avatars</h1>
+          <p>
+            The avatar component is a profile image often used in combo with additional elements (e.g., a status
+            element) to provide additional info about a user. To change the size of the component, you can either use
+            one of the size classes or edit the font-size. The width and height of the component will adapt accordingly.
+          </p>
+
+          <div class="avatars-container">
+            <div class="avatar avatar-sm">
+              <img src="../images/avatar.png" alt="Avatar" />
+            </div>
+            <div class="avatar avatar-md">
+              <img src="../images/avatar.png" alt="Avatar" />
+            </div>
+            <div class="avatar avatar-lg">
+              <img src="../images/avatar.png" alt="Avatar" />
+            </div>
+            <div class="avatar avatar-xl">
+              <img src="../images/avatar.png" alt="Avatar" />
+            </div>
+          </div>
+          <p>
+            To use simply add <span class="code-highlight">.avatar</span> and
+            <span class="code-highlight">.avatar-sm</span>, <span class="code-highlight">.avatar-md</span>,
+            <span class="code-highlight">.avatar-lg</span> or
+            <span class="code-highlight">.avatar-xl</span>
+            to the element you want to be an avatar or its parent.
+          </p>
+          <pre>
+            <code class="language-html">
+                <div class="avatar avatar-sm">
+                    <img src="../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="avatar avatar-md">
+                    <img src="../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="avatar avatar-lg">
+                    <img src="../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="avatar avatar-xl">
+                    <img src="../images/avatar.png" alt="Avatar" />
+                </div>
+            </code>
+        </pre>
+        </div>
+        <!-- end of avatar -->
+
+        <div class="component-container" id="badge">
+          <h1>Badges</h1>
+          <p>
+            The badge component is used to indicate the number of unread messages or notifications for a user. To use
+            simply add
+          </p>
+          <div class="badges-container">
+            <h4>Badge on top of icon</h4>
+            <div class="badge-container">
+              <i class="fas fa-home"></i>
+              <div class="badge badge-top">
+                <span class="badge-text">5</span>
+              </div>
+            </div>
+            <span>or</span>
+            <div class="badge-container">
+              <i class="fas fa-home"></i>
+              <div class="badge badge-bottom">
+                <span class="badge-text">5</span>
+              </div>
+            </div>
+
+            <h4>Badge on top of avatar</h4>
+            <div class="badge-container">
+              <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
+              <div class="badge badge-top">
+                <span class="badge-text">5</span>
+              </div>
+            </div>
+            <span>or</span>
+            <div class="badge-container">
+              <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
+              <div class="badge badge-bottom">
+                <span class="badge-text">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of badge -->
+
+        <div class="component-container" id="buttons">
+          <h1>Buttons</h1>
+          <p>The button component is used to provide a button for a user to interact with.</p>
+          <div class="buttons-container">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-danger">Danger</button>
+          </div>
+
+          <p>
+            To use simply add
+            <span class="code-highlight">.btn</span>
+            <span class="code-highlight">.btn-primary</span>, <span class="code-highlight">.btn-secondary</span>,
+            <span class="code-highlight">.btn-success</span>, <span class="code-highlight">.btn-danger</span>,
+            <span class="code-highlight">.btn-warning</span> or
+            <span class="code-highlight">.btn-info</span>
+            to the element you want to be a button.
+          </p>
+
+          <pre>
+                <code class="language-html">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-danger">Danger</button>
+                </code>
+            </pre>
+        </div><!-- end of buttons container -->
+      </div> <!-- end of sections-container -->
       <!-- end of .main-container -->
     </div>
     <script src="../scripts/index.js"></script>
