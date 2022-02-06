@@ -1,4 +1,8 @@
 @import url(./components/alert.css);
+@import url(./components/avatar.css);
+@import url(./components/badge.css);
+@import url(./components/buttons.css);
+@import url(./utilities/colors.css);
 
 * {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
@@ -107,8 +111,33 @@ html {
     flex-basis: 80%;
 }
 
+/* containers */
+
+.avatars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
+}
+
+.badge-container {
+    display: inline-block;
+    position: relative;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    gap: 1rem;
+}
 
 /* end of containers */
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     :root {
         font-size: 0.8rem;
