@@ -1,0 +1,47 @@
+:root {
+    /* variables for different sizes of paddings and margins */
+    --padding-extra-small: 0.25rem;
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 1.5rem;
+    --padding-extra-large: 2rem;
+
+    --margin-extra-small: 0.25rem;
+    --margin-small: 0.5rem;
+    --margin-medium: 1rem;
+    --margin-large: 1.5rem;
+    --margin-extra-large: 2rem;
+
+    /* variables for different sizes of font sizes */
+    --font-size-extra-small: 0.75rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+    --font-size-extra-large: 2rem;
+
+    /* variables for different sizes of line heights */
+    --line-height-extra-small: 1.2rem;
+    --line-height-small: 1.5rem;
+    --line-height-medium: 1.8rem;
+    --line-height-large: 2rem;
+    --line-height-extra-large: 2.5rem;
+
+    /* variables for different sizes of font weights */
+    --font-weight-extra-light: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+
+    /* variables for different sizes of font styles */
+    --font-style-italic: italic;
+    --font-style-normal: normal;
+
+    /* for border radius */
+    --border-radius-extra-small: 0.25rem;
+    --border-radius-small: 0.5rem;
+    --border-radius-medium: 1rem;
+    --border-radius-large: 1.5rem;
+    --border-radius-extra-large: 2rem;
+}

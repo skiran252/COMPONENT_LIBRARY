@@ -58,12 +58,15 @@
             <li class="docs-navbar-item">
               <a class="navbar-link" href="#buttons">Buttons</a>
             </li>
+            <li class="docs-navbar-item">
+              <a class="navbar-link" href="#card">Card</a>
+            </li>
           </ul>
         </nav>
       </aside>
       <div class="main-container">
-        <h1>Getting Started</h1>
-        <p>To use the library add below snipped in your code</p>
+        <h1 id="getting_started">Getting Started</h1>
+        <p>To use the library add below snippet to your code</p>
         <pre>
             <code class="language-html">
                 <link rel="stylesheet" href="https://lazy-ui.netlify.app/styles/index.css"/>
@@ -197,6 +200,7 @@
         <div class="component-container" id="buttons">
           <h1>Buttons</h1>
           <p>The button component is used to provide a button for a user to interact with.</p>
+          <h4>Primary Buttons</h4>
           <div class="buttons-container">
             <button class="btn btn-primary">Primary</button>
             <button class="btn btn-secondary">Secondary</button>
@@ -225,9 +229,203 @@
                     <button class="btn btn-info">Info</button>
                     <button class="btn btn-danger">Danger</button>
                 </code>
-            </pre>
-        </div><!-- end of buttons container -->
-      </div> <!-- end of sections-container -->
+          </pre>
+
+          <h4>Link Button</h4>
+          <div class="buttons-container">
+            <a class="btn btn-link" href="#buttons">Button</a>
+            <a class="btn btn-link btn-primary" href="#avatar">Avatars </a>
+            <a class="btn btn-link btn-secondary" href="#">Secondary</a>
+            <a class="btn btn-link btn-success" href="#badge">Badge</a>
+            <a class="btn btn-link btn-warning" href="#alert">Alerts</a>
+            <a class="btn btn-link btn-info" href="#getting_started">Info</a>
+            <a class="btn btn-link btn-danger" href="#">Danger</a>
+          </div>
+          <p>code snippet</p>
+          <pre>
+                <code class="language-html">
+                    <a class="btn btn-link" href="#buttons">Button</a>
+                    <a class="btn btn-link btn-primary" href="#avatar">Avatars </a>
+                    <a class="btn btn-link btn-secondary" href="#" >Secondary</a>
+                    <a class="btn btn-link btn-success" href="#badge">Badge</a>
+                    <a class="btn btn-link btn-warning" href="#alert">Alerts</a>
+                    <a class="btn btn-link btn-info" href="#getting_started" >Info</a>
+                    <a class="btn btn-link btn-danger"href="#" >Danger</a>
+                </code>
+          </pre>
+          <h4>Icon Button</h4>
+          <div class="buttons-container">
+            <button class="btn btn-icon btn-primary">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-icon btn-secondary">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-icon btn-success">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-icon btn-warning">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-icon btn-info">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-icon btn-danger">
+              <i class="fas fa-home"></i>
+            </button>
+          </div>
+          <h4>Outlined Buttons</h4>
+          <div class="buttons-container">
+            <button class="btn btn-outlined-primary">Primary</button>
+            <button class="btn btn-outlined-secondary">Secondary</button>
+            <button class="btn btn-outlined-success">Success</button>
+            <button class="btn btn-outlined-warning">Warning</button>
+            <button class="btn btn-outlined-info">Info</button>
+            <button class="btn btn-outlined-danger">Danger</button>
+          </div>
+
+          <p>
+            To use simply add
+            <span class="code-highlight">.btn</span>
+            <span class="code-highlight">.btn-outlined-primary</span>,
+            <span class="code-highlight">.btn-outlined-secondary</span>,
+            <span class="code-highlight">.btn-outlined-success</span>,
+            <span class="code-highlight">.btn-outlined-warning</span>,
+            <span class="code-highlight">.btn-outlined-info</span> or
+            <span class="code-highlight">.btn-outlined-danger</span>
+            to the element you want to be a button.
+          </p>
+
+          <pre>
+                <code class="language-html">
+                    <button class="btn btn-outlined-primary">Primary</button>
+                    <button class="btn btn-outlined-secondary">Secondary</button>
+                    <button class="btn btn-outlined-success">Success</button>
+                    <button class="btn btn-outlined-warning">Warning</button>
+                    <button class="btn btn-outlined-info">Info</button>
+                    <button class="btn btn-outlined-danger">Danger</button>
+                </code>
+          </pre>
+        </div>
+        <!-- card component -->
+        <div class="component-container" id="card">
+          <h1>Card</h1>
+          <p>
+            Cards are used to display content in a way that is easily digestible and readable. They can be used to
+            display content related to a single subject or topic, or to display multiple related topics.
+          </p>
+          <p>Basic Card</p>
+          <div class="card">
+            <div class="card-icon card-wishlist">
+              <i class="far fa-heart"></i>
+            </div>
+
+            <div class="card-container">
+              <div class="card-image-container">
+                <img
+                  class="card-image"
+                  src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                  alt="card image"
+                />
+              </div>
+              <div class="card-header">
+                <h2 class="card-heading">Apple iPhone X</h2>
+                <p class="card-subheading">by Apple California</p>
+              </div>
+              <div class="card-description">
+                Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-button-area">
+                <button class="card-button button-add-to-cart"> <i class="fas fa-shopping-cart"></i> ADD TO CART  </button>
+                <button class="card-button button-buy-now">BUY NOW <i class="fa-solid fa-cart-shopping"></i> </button>
+              </div>
+
+              <div class="card-icons-area">
+                <div class="card-icon">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Horizontal Card</p>
+          <div class="card card-horizontal">
+            <div class="card-icon card-wishlist">
+              <i class="far fa-heart"></i>
+            </div>
+
+            <div class="card-container">
+              <div class="card-image-container">
+                <img
+                  class="card-image"
+                  src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                  alt="card image"
+                />
+              </div>
+              <div class="card-header">
+                <h2 class="card-heading">Apple iPhone X</h2>
+                <p class="card-subheading">by Apple California</p>
+                <div class="card-description">
+                  Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                </div>
+              </div>
+             
+            </div>
+            <div class="card-footer">
+              <div class="card-button-area">
+                <button class="card-button button-add-to-cart"> <i class="fas fa-shopping-cart"></i> ADD TO CART  </button>
+                <button class="card-button button-buy-now">BUY NOW <i class="fa-solid fa-cart-shopping"></i> </button>
+              </div>
+
+              <div class="card-icons-area">
+                <div class="card-icon">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>Text Over Image Card</p>
+          <div class="card card-image-overlay">
+            <div class="card-icon card-wishlist">
+              <i class="far fa-heart"></i>
+            </div>
+
+            <div class="card-container">
+              <div class="card-image-container">
+                <img
+                  class="card-image"
+                  src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                  alt="card image"
+                />
+              </div>
+              <div class="card-header">
+                <h2 class="card-heading">Apple iPhone X</h2>
+                <p class="card-subheading">by Apple California</p>
+                <div class="card-description">
+                  Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                </div>
+              </div>
+             
+            </div>
+            <div class="card-footer">
+              <div class="card-button-area">
+                <button class="card-button button-add-to-cart"> <i class="fas fa-shopping-cart"></i> ADD TO CART  </button>
+                <button class="card-button button-buy-now">BUY NOW <i class="fa-solid fa-cart-shopping"></i> </button>
+              </div>
+
+              <div class="card-icons-area">
+                <div class="card-icon">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of buttons component -->
+      </div>
+      <!-- end of sections-container -->
       <!-- end of .main-container -->
     </div>
     <script src="../scripts/index.js"></script>

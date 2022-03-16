@@ -1,0 +1,248 @@
+/*  css for card component */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    padding: 2rem;
+}
+
+.card {
+    width: 15rem;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 1rem;
+    min-height: 15rem;
+    max-height: 25rem;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "card-container"
+        "card-container"
+        "card-container"
+        "card-container"
+        "card-container"
+        "card-container"
+        "card-footer";
+}
+
+.card-horizontal {
+    grid-template-areas:
+        "card-container"
+        "card-container"
+        "card-footer";
+    width: 25rem;
+    max-width: 30rem;
+}
+
+.card-container {
+    grid-area: card-container;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card-horizontal .card-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card-container:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* start of card image */
+
+.card .card-container .card-image-container {
+    display: block;
+    width: 100%;
+    grid-row: 1 / 3;
+}
+
+
+.card .card-container .card-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+.card-horizontal .card-container .card-image-container img {
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+/* end of card image  */
+
+
+/* start of card header */
+
+.card .card-container .card-header {
+    grid-area: card-header;
+    display: flex;
+    flex-flow: column;
+    grid-row: 4 / 4;
+}
+
+
+.card-horizontal .card-container .card-header {
+    grid-area: card-header;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.card-image-overlay .card-container .card-header {
+    grid-row: 1/3;
+    grid-column: 1 / -1;
+}
+
+.card-header .card-heading {
+    padding-left: var(--padding-small);
+    padding-top: var(--padding-small);
+    font-weight: bold;
+    font-size: var(--font-size-medium);
+}
+
+.card-header .card-subheading {
+    padding-left: var(--padding-small);
+    font-size: 0.8rem !important;
+}
+
+/* end of card header */
+
+.card .card-container .card-description {
+    grid-area: card-description;
+    padding: var(--padding-extra-small) var(--padding-small);
+    padding-bottom: var(--padding-small);
+    font-size: 0.8rem !important;
+    grid-row: 5 / 6;
+}
+
+
+
+/* start of card footer */
+
+.card-footer {
+    grid-area: card-footer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    padding: 0 var(--padding-extra-small);
+}
+
+.card-footer .card-button-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-gap: 1rem;
+}
+
+.card-footer .card-button {
+    cursor: pointer;
+    padding: 0.8rem 0.3rem;
+    background-color: white;
+    color: #6200ee;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border: none;
+    font-size: 0.6rem;
+}
+
+.card-button:hover {
+    background-color: rgba(98, 0, 238, 0.1);
+}
+
+
+.card-footer .button-add-to-cart {
+    color: #f1bb00;
+    border-radius: var(--border-radius-extra-small);
+}
+
+.card-footer .button-add-to-cart:hover {
+    background-color: #f1bb00;
+    color: white;
+}
+
+.card-footer .button-buy-now {
+    color: #f69b09;
+    border-radius: var(--border-radius-extra-small);
+}
+
+.card-footer .button-buy-now:hover {
+    background-color: #f69b09;
+    color: white;
+}
+
+.card-icons-area {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* light color on hover */
+
+
+
+
+
+.card-icon {
+    border-radius: 50%;
+    font-size: 1.2rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.card-horizontal .card-icon {
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+}
+
+
+.card .card-wishlist {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
+.card-horizontal .card-wishlist {
+    position: absolute;
+    top: unset;
+    right: unset;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+}
+
+.card-horizontal .card-wishlist:hover {
+    color: white;
+}
+
+.card-icon:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #6200ee;
+}
+
+.card-horizontal>.card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-horizontal .card-image {
+    height: 100%;
+}
