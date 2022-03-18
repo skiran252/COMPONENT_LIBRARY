@@ -1,14 +1,11 @@
 @import url(./common/sizes.css);
 @import url(./utilities/colors.css);
+@import url(./utilities/spacing.css);
 @import url(./components/alert.css);
 @import url(./components/avatar.css);
 @import url(./components/badge.css);
 @import url(./components/buttons.css);
 @import url(./components/card.css);
-
-* {
-    font-family: Helvetica, Helvetica, Arial, sans-serif;
-}
 
 h3 {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
