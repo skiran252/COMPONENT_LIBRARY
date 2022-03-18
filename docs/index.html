@@ -70,6 +70,9 @@
                     <li class="docs-navbar-item">
                         <a class="navbar-link" href="#listItems">Lists</a>
                     </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#navigation">Navigation</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -692,8 +695,8 @@
                 <div class="form-container">
                     <form class="responsive-form">
                         <div class="form-group">
-                            <input type="text" class="form-input" id="name" placeholder="username" aria-label="Username"
-                                autofocus />
+                            <input type="text" class="form-input" id="name" placeholder="username"
+                                aria-label="Username" />
                             <label for="name" class="form-label">username</label>
                         </div>
                         <div class="form-group">
@@ -709,7 +712,7 @@
                     <form class="responsive-form">
                         <div class="form-group">
                             <input type="text" class="form-input" id="name" placeholder="username" required
-                                aria-label="Username" autofocus />
+                                aria-label="Username" />
                             <div class="input-warning">input field invalid / required</div>
                             <label for="name" class="form-label">username</label>
                         </div>
@@ -726,7 +729,7 @@
                   <code class="language-html">
                     <form class="responsive-form">
                       <div class="form-group">
-                          <input type="text" class="form-input" id="name" placeholder="username" aria-label="Username" autofocus />
+                          <input type="text" class="form-input" id="name" placeholder="username" aria-label="Username"  />
                           <label for="name" class="form-label">username</label>
                       </div>
                       <div class="form-group">
@@ -737,7 +740,7 @@
                   <!-- with validation -->
                   <form class="responsive-form">
                     <div class="form-group">
-                        <input type="text" class="form-input" id="name" placeholder="username" required aria-label="Username" autofocus />
+                        <input type="text" class="form-input" id="name" placeholder="username" required aria-label="Username" />
                         <div class="input-warning">input field invalid / required</div>
                         <label for="name" class="form-label">username</label>
                     </div>
@@ -827,7 +830,7 @@
                     <li class="list-item">List Item 3</li>
                     <li class="list-item">List Item 4</li>
                 </ul>
-                <div class="flex flex-row flex-gap-medium">
+                <div class="flex flex-column flex-gap-medium">
                     <div class="flex-col-2">
                         <h3>Unordered Lists</h3>
                         <h5>unordered disc</h5>
@@ -951,6 +954,122 @@
                 </div>
 
 
+            </div>
+            <div class="component-container" id="navigation">
+                <h2>Navigation (Navbar) </h2>
+                <div class="navbar navbar-with-search">
+                    <div class="navbar-brand">
+                        <a href="#">GSK LLC</a>
+                    </div>
+
+                    <div class="navbar-search">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <i class="fas fa-solid fa-search"></i>
+                    </div>
+                    <div class="navbar-navigation">
+                        <ul class="navbar-navigation-list">
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-home"></i> Home </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-heart"></i> Wishlist </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-user"> </i>My Profile </i> </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fa fa-regular fa-shopping-cart"></i> Cart </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+                        <div class="navbar navbar-with-search">
+                            <div class="navbar-brand">
+                                <a href="#">GSK LLC</a>
+                            </div>
+        
+                            <div class="navbar-search">
+                                <input type="text" placeholder="Search" class="search-input">
+                                <i class="fas fa-solid fa-search"></i>
+                            </div>
+                            <div class="navbar-navigation">
+                                <ul class="navbar-navigation-list">
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-home"></i> Home </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-heart"></i> Wishlist </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-user"> </i>My Profile </i> </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fa fa-regular fa-shopping-cart"></i> Cart </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </code>
+                </pre>
+                <h3>Navbar dark</h3>
+                <div class="navbar navbar-dark navbar-with-search">
+                    <div class="navbar-brand">
+                        <a href="#">GSK LLC</a>
+                    </div>
+
+                    <div class="navbar-search">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <i class="fas fa-solid fa-search"></i>
+                    </div>
+                    <div class="navbar-navigation">
+                        <ul class="navbar-navigation-list">
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-home"></i> Home </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-heart"></i> Wishlist </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fas fa-solid fa-user"> </i>My Profile </i> </a>
+                            </li>
+                            <li class="navbar-navigation-item">
+                                <a href="#"> <i class="fa fa-regular fa-shopping-cart"></i> Cart </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+                        <div class="navbar navbar-dark navbar-with-search">
+                            <div class="navbar-brand">
+                                <a href="#">GSK LLC</a>
+                            </div>
+        
+                            <div class="navbar-search">
+                                <input type="text" placeholder="Search" class="search-input">
+                                <i class="fas fa-solid fa-search"></i>
+                            </div>
+                            <div class="navbar-navigation">
+                                <ul class="navbar-navigation-list">
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-home"></i> Home </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-heart"></i> Wishlist </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fas fa-solid fa-user"> </i>My Profile </i> </a>
+                                    </li>
+                                    <li class="navbar-navigation-item">
+                                        <a href="#"> <i class="fa fa-regular fa-shopping-cart"></i> Cart </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </code>
+                </pre>
             </div>
         </div>
         <!-- end of sections-container -->
