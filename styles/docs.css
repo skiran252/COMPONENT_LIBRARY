@@ -6,6 +6,8 @@
 @import url(./components/badge.css);
 @import url(./components/buttons.css);
 @import url(./components/card.css);
+@import url(./components/image.css);
+@import url(./components/input.css);
 
 h3 {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
@@ -74,6 +76,22 @@ html {
     padding: 2rem 1rem;
     width: 100%;
     border-right: 2px solid #e9ecef;
+    overflow-y: scroll;
+}
+
+
+.docs-layout .main-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.docs-layout .main-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.docs-layout .main-container::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 10px;
+    background-clip: content-box;
 }
 
 .docs-layout .main-container .component-container {

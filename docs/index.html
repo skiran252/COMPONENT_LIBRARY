@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,88 +12,87 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad();
+        hljs.initHighlightingOnLoad();
     </script>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-  </head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
 
-  <body>
+<body>
     <!-- header for Lazy UI with navigation links -->
     <header class="lazy-ui-header">
-      <div class="lazy-ui-header-container">
-        <div class="lazy-ui-header-logo">
-          <a href="/" class="lazy-ui-logo">
-            <div class="lazy-ui-logo-text">
-              <div class="lazy-ui-logo-title">Lazy UI</div>
+        <div class="lazy-ui-header-container">
+            <div class="lazy-ui-header-logo">
+                <a href="/" class="lazy-ui-logo">
+                    <div class="lazy-ui-logo-text">
+                        <div class="lazy-ui-logo-title">Lazy UI</div>
+                    </div>
+                </a>
             </div>
-          </a>
+            <nav class="lazy-ui-navbar">
+                <ul class="lazy-ui-navbar-list">
+                    <li class="lazy-ui-navbar-item">
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="lazy-ui-navbar">
-          <ul class="lazy-ui-navbar-list">
-            <li class="lazy-ui-navbar-item">
-              <a href="/">Home</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
     <div class="docs-layout">
-      <aside>
-        <h3 class="sidebar-header">COMPONENTS</h3>
-        <nav class="docs-navbar">
-          <ul class="docs-navbar-list">
-            <li class="docs-navbar-item">
-              <a class="navbar-link" href="#alert">Alerts</a>
-            </li>
-            <li class="docs-navbar-item">
-              <a class="navbar-link" href="#avatar">Avatar</a>
-            </li>
-            <li class="docs-navbar-item">
-              <a class="navbar-link" href="#badge">Badge</a>
-            </li>
-            <li class="docs-navbar-item">
-              <a class="navbar-link" href="#buttons">Buttons</a>
-            </li>
-            <li class="docs-navbar-item">
-              <a class="navbar-link" href="#card">Card</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <div class="main-container">
-        <h1 id="getting_started">Getting Started</h1>
-        <p>To use the library add below snippet to your code</p>
-        <pre>
+        <aside>
+            <h3 class="sidebar-header">COMPONENTS</h3>
+            <nav class="docs-navbar">
+                <ul class="docs-navbar-list">
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#alert">Alerts</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#avatar">Avatar</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#badge">Badge</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#buttons">Buttons</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#card">Card</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#image">Images</a>
+                    </li>
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#input">Input</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-container">
+            <h1 id="getting_started">Getting Started</h1>
+            <p>To use the library add below snippet to your code</p>
+            <pre>
             <code class="language-html">
                 <link rel="stylesheet" href="https://lazy-ui.netlify.app/styles/index.css"/>
             </code>
         </pre>
 
-        <div class="component-container" id="alert">
-          <h1>Alerts</h1>
-          <p>
-            The alert component can be used to provide information to your users such as success or error messages, but
-            also highlighted information complementing the normal flow of paragraphs and headers on a page.
-          </p>
+            <div class="component-container" id="alert">
+                <h1>Alerts</h1>
+                <p>
+                    The alert component can be used to provide information to your users such as success or error messages, but also highlighted information complementing the normal flow of paragraphs and headers on a page.
+                </p>
 
-          <div class="alert alert-success"><strong>Success!</strong> This alert is a success alert.</div>
-          <div class="alert alert-warning"><strong>Warning!</strong> This alert is a warning alert.</div>
-          <div class="alert alert-danger"><strong>Danger!</strong> This alert is a danger alert.</div>
-          <div class="alert alert-info"><strong>Info!</strong> This alert is an info alert.</div>
+                <div class="alert alert-success"><strong>Success!</strong> This alert is a success alert.</div>
+                <div class="alert alert-warning"><strong>Warning!</strong> This alert is a warning alert.</div>
+                <div class="alert alert-danger"><strong>Danger!</strong> This alert is a danger alert.</div>
+                <div class="alert alert-info"><strong>Info!</strong> This alert is an info alert.</div>
 
-          <p>
-            To use simply add <span class="code-highlight">.alert</span>
-            <span class="code-highlight">.alert-success</span>, <span class="code-highlight">.alert-warning</span>,
-            <span class="code-highlight">.alert-danger</span> or
-            <span class="code-highlight">.alert-info</span>
-            to the element you want to be an alert.
-          </p>
-          <pre>
+                <p>
+                    To use simply add <span class="code-highlight">.alert</span>
+                    <span class="code-highlight">.alert-success</span>, <span class="code-highlight">.alert-warning</span>,
+                    <span class="code-highlight">.alert-danger</span> or
+                    <span class="code-highlight">.alert-info</span> to the element you want to be an alert.
+                </p>
+                <pre>
                 <code class="language-html">
                     <div class="alert alert-success">
                         <strong>Success!</strong> This alert is a success alert.
@@ -108,37 +108,35 @@
                     </div>
                 </code>
             </pre>
-        </div>
-        <div class="component-container" id="avatar">
-          <h1>Avatars</h1>
-          <p>
-            The avatar component is a profile image often used in combo with additional elements (e.g., a status
-            element) to provide additional info about a user. To change the size of the component, you can either use
-            one of the size classes or edit the font-size. The width and height of the component will adapt accordingly.
-          </p>
+            </div>
+            <div class="component-container" id="avatar">
+                <h1>Avatars</h1>
+                <p>
+                    The avatar component is a profile image often used in combo with additional elements (e.g., a status element) to provide additional info about a user. To change the size of the component, you can either use one of the size classes or edit the font-size.
+                    The width and height of the component will adapt accordingly.
+                </p>
 
-          <div class="avatars-container">
-            <div class="avatar avatar-sm">
-              <img src="../images/avatar.png" alt="Avatar" />
-            </div>
-            <div class="avatar avatar-md">
-              <img src="../images/avatar.png" alt="Avatar" />
-            </div>
-            <div class="avatar avatar-lg">
-              <img src="../images/avatar.png" alt="Avatar" />
-            </div>
-            <div class="avatar avatar-xl">
-              <img src="../images/avatar.png" alt="Avatar" />
-            </div>
-          </div>
-          <p>
-            To use simply add <span class="code-highlight">.avatar</span> and
-            <span class="code-highlight">.avatar-sm</span>, <span class="code-highlight">.avatar-md</span>,
-            <span class="code-highlight">.avatar-lg</span> or
-            <span class="code-highlight">.avatar-xl</span>
-            to the element you want to be an avatar or its parent.
-          </p>
-          <pre>
+                <div class="avatars-container">
+                    <div class="avatar avatar-sm">
+                        <img src="../images/avatar.png" alt="Avatar" />
+                    </div>
+                    <div class="avatar avatar-md">
+                        <img src="../images/avatar.png" alt="Avatar" />
+                    </div>
+                    <div class="avatar avatar-lg">
+                        <img src="../images/avatar.png" alt="Avatar" />
+                    </div>
+                    <div class="avatar avatar-xl">
+                        <img src="../images/avatar.png" alt="Avatar" />
+                    </div>
+                </div>
+                <p>
+                    To use simply add <span class="code-highlight">.avatar</span> and
+                    <span class="code-highlight">.avatar-sm</span>, <span class="code-highlight">.avatar-md</span>,
+                    <span class="code-highlight">.avatar-lg</span> or
+                    <span class="code-highlight">.avatar-xl</span> to the element you want to be an avatar or its parent.
+                </p>
+                <pre>
             <code class="language-html">
                 <div class="avatar avatar-sm">
                     <img src="../images/avatar.png" alt="Avatar" />
@@ -154,73 +152,71 @@
                 </div>
             </code>
         </pre>
-        </div>
-        <!-- end of avatar -->
-
-        <div class="component-container" id="badge">
-          <h1>Badges</h1>
-          <p>
-            The badge component is used to indicate the number of unread messages or notifications for a user. To use
-            simply add
-          </p>
-          <div class="badges-container">
-            <h4>Badge on top of icon</h4>
-            <div class="badge-container">
-              <i class="fas fa-home"></i>
-              <div class="badge badge-top">
-                <span class="badge-text">5</span>
-              </div>
             </div>
-            <span>or</span>
-            <div class="badge-container">
-              <i class="fas fa-home"></i>
-              <div class="badge badge-bottom">
-                <span class="badge-text">5</span>
-              </div>
+            <!-- end of avatar -->
+
+            <div class="component-container" id="badge">
+                <h1>Badges</h1>
+                <p>
+                    The badge component is used to indicate the number of unread messages or notifications for a user. To use simply add
+                </p>
+                <div class="badges-container">
+                    <h4>Badge on top of icon</h4>
+                    <div class="badge-container">
+                        <i class="fas fa-home"></i>
+                        <div class="badge badge-top">
+                            <span class="badge-text">5</span>
+                        </div>
+                    </div>
+                    <span>or</span>
+                    <div class="badge-container">
+                        <i class="fas fa-home"></i>
+                        <div class="badge badge-bottom">
+                            <span class="badge-text">5</span>
+                        </div>
+                    </div>
+
+                    <h4>Badge on top of avatar</h4>
+                    <div class="badge-container">
+                        <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
+                        <div class="badge badge-top">
+                            <span class="badge-text">5</span>
+                        </div>
+                    </div>
+                    <span>or</span>
+                    <div class="badge-container">
+                        <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
+                        <div class="badge badge-bottom">
+                            <span class="badge-text">5</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- end of badge -->
 
-            <h4>Badge on top of avatar</h4>
-            <div class="badge-container">
-              <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
-              <div class="badge badge-top">
-                <span class="badge-text">5</span>
-              </div>
-            </div>
-            <span>or</span>
-            <div class="badge-container">
-              <img class="avatar avatar-xl" src="../images/avatar.png" alt="Avatar" />
-              <div class="badge badge-bottom">
-                <span class="badge-text">5</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of badge -->
+            <div class="component-container" id="buttons">
+                <h1>Buttons</h1>
+                <p>The button component is used to provide a button for a user to interact with.</p>
+                <h4>Primary Buttons</h4>
+                <div class="buttons-container">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-danger">Danger</button>
+                </div>
 
-        <div class="component-container" id="buttons">
-          <h1>Buttons</h1>
-          <p>The button component is used to provide a button for a user to interact with.</p>
-          <h4>Primary Buttons</h4>
-          <div class="buttons-container">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-secondary">Secondary</button>
-            <button class="btn btn-success">Success</button>
-            <button class="btn btn-warning">Warning</button>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-danger">Danger</button>
-          </div>
+                <p>
+                    To use simply add
+                    <span class="code-highlight">.btn</span>
+                    <span class="code-highlight">.btn-primary</span>, <span class="code-highlight">.btn-secondary</span>,
+                    <span class="code-highlight">.btn-success</span>, <span class="code-highlight">.btn-danger</span>,
+                    <span class="code-highlight">.btn-warning</span> or
+                    <span class="code-highlight">.btn-info</span> to the element you want to be a button.
+                </p>
 
-          <p>
-            To use simply add
-            <span class="code-highlight">.btn</span>
-            <span class="code-highlight">.btn-primary</span>, <span class="code-highlight">.btn-secondary</span>,
-            <span class="code-highlight">.btn-success</span>, <span class="code-highlight">.btn-danger</span>,
-            <span class="code-highlight">.btn-warning</span> or
-            <span class="code-highlight">.btn-info</span>
-            to the element you want to be a button.
-          </p>
-
-          <pre>
+                <pre>
                 <code class="language-html">
                     <button class="btn btn-primary">Primary</button>
                     <button class="btn btn-secondary">Secondary</button>
@@ -231,18 +227,18 @@
                 </code>
           </pre>
 
-          <h4>Link Button</h4>
-          <div class="buttons-container">
-            <a class="btn btn-link" href="#buttons">Button</a>
-            <a class="btn btn-link btn-primary" href="#avatar">Avatars </a>
-            <a class="btn btn-link btn-secondary" href="#">Secondary</a>
-            <a class="btn btn-link btn-success" href="#badge">Badge</a>
-            <a class="btn btn-link btn-warning" href="#alert">Alerts</a>
-            <a class="btn btn-link btn-info" href="#getting_started">Info</a>
-            <a class="btn btn-link btn-danger" href="#">Danger</a>
-          </div>
-          <p>code snippet</p>
-          <pre>
+                <h4>Link Button</h4>
+                <div class="buttons-container">
+                    <a class="btn btn-link" href="#buttons">Button</a>
+                    <a class="btn btn-link btn-primary" href="#avatar">Avatars </a>
+                    <a class="btn btn-link btn-secondary" href="#">Secondary</a>
+                    <a class="btn btn-link btn-success" href="#badge">Badge</a>
+                    <a class="btn btn-link btn-warning" href="#alert">Alerts</a>
+                    <a class="btn btn-link btn-info" href="#getting_started">Info</a>
+                    <a class="btn btn-link btn-danger" href="#">Danger</a>
+                </div>
+                <p>code snippet</p>
+                <pre>
                 <code class="language-html">
                     <a class="btn btn-link" href="#buttons">Button</a>
                     <a class="btn btn-link btn-primary" href="#avatar">Avatars </a>
@@ -253,50 +249,49 @@
                     <a class="btn btn-link btn-danger"href="#" >Danger</a>
                 </code>
           </pre>
-          <h4>Icon Button</h4>
-          <div class="buttons-container">
-            <button class="btn btn-icon btn-primary">
-              <i class="fas fa-home"></i>
-            </button>
-            <button class="btn btn-icon btn-secondary">
-              <i class="fas fa-home"></i>
-            </button>
-            <button class="btn btn-icon btn-success">
-              <i class="fas fa-home"></i>
-            </button>
-            <button class="btn btn-icon btn-warning">
-              <i class="fas fa-home"></i>
-            </button>
-            <button class="btn btn-icon btn-info">
-              <i class="fas fa-home"></i>
-            </button>
-            <button class="btn btn-icon btn-danger">
-              <i class="fas fa-home"></i>
-            </button>
-          </div>
-          <h4>Outlined Buttons</h4>
-          <div class="buttons-container">
-            <button class="btn btn-outlined-primary">Primary</button>
-            <button class="btn btn-outlined-secondary">Secondary</button>
-            <button class="btn btn-outlined-success">Success</button>
-            <button class="btn btn-outlined-warning">Warning</button>
-            <button class="btn btn-outlined-info">Info</button>
-            <button class="btn btn-outlined-danger">Danger</button>
-          </div>
+                <h4>Icon Button</h4>
+                <div class="buttons-container">
+                    <button class="btn btn-icon btn-primary">
+            <i class="fas fa-home"></i>
+          </button>
+                    <button class="btn btn-icon btn-secondary">
+            <i class="fas fa-home"></i>
+          </button>
+                    <button class="btn btn-icon btn-success">
+            <i class="fas fa-home"></i>
+          </button>
+                    <button class="btn btn-icon btn-warning">
+            <i class="fas fa-home"></i>
+          </button>
+                    <button class="btn btn-icon btn-info">
+            <i class="fas fa-home"></i>
+          </button>
+                    <button class="btn btn-icon btn-danger">
+            <i class="fas fa-home"></i>
+          </button>
+                </div>
+                <h4>Outlined Buttons</h4>
+                <div class="buttons-container">
+                    <button class="btn btn-outlined-primary">Primary</button>
+                    <button class="btn btn-outlined-secondary">Secondary</button>
+                    <button class="btn btn-outlined-success">Success</button>
+                    <button class="btn btn-outlined-warning">Warning</button>
+                    <button class="btn btn-outlined-info">Info</button>
+                    <button class="btn btn-outlined-danger">Danger</button>
+                </div>
 
-          <p>
-            To use simply add
-            <span class="code-highlight">.btn</span>
-            <span class="code-highlight">.btn-outlined-primary</span>,
-            <span class="code-highlight">.btn-outlined-secondary</span>,
-            <span class="code-highlight">.btn-outlined-success</span>,
-            <span class="code-highlight">.btn-outlined-warning</span>,
-            <span class="code-highlight">.btn-outlined-info</span> or
-            <span class="code-highlight">.btn-outlined-danger</span>
-            to the element you want to be a button.
-          </p>
+                <p>
+                    To use simply add
+                    <span class="code-highlight">.btn</span>
+                    <span class="code-highlight">.btn-outlined-primary</span>,
+                    <span class="code-highlight">.btn-outlined-secondary</span>,
+                    <span class="code-highlight">.btn-outlined-success</span>,
+                    <span class="code-highlight">.btn-outlined-warning</span>,
+                    <span class="code-highlight">.btn-outlined-info</span> or
+                    <span class="code-highlight">.btn-outlined-danger</span> to the element you want to be a button.
+                </p>
 
-          <pre>
+                <pre>
                 <code class="language-html">
                     <button class="btn btn-outlined-primary">Primary</button>
                     <button class="btn btn-outlined-secondary">Secondary</button>
@@ -306,19 +301,190 @@
                     <button class="btn btn-outlined-danger">Danger</button>
                 </code>
           </pre>
-        </div>
-        <!-- end of buttons component -->
+            </div>
+            <!-- end of buttons component -->
 
-        <!-- card component -->
-        <div class="component-container" id="card">
-          <h1>Card</h1>
-          <p>
-            Cards are used to display content in a way that is easily digestible and readable. They can be used to
-            display content related to a single subject or topic, or to display multiple related topics.
-          </p>
-          <div class="cards-group-container">
-            <div>
-              <p>Basic Card</p>
+            <!-- card component -->
+            <div class="component-container" id="card">
+                <h1>Card</h1>
+                <p>
+                    Cards are used to display content in a way that is easily digestible and readable. They can be used to display content related to a single subject or topic, or to display multiple related topics.
+                </p>
+                <div class="cards-group-container">
+                    <div>
+                        <p>Basic Card</p>
+                        <div class="card">
+                            <div class="card-icon card-wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="card-container">
+                                <div class="card-image-container">
+                                    <img class="card-image" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="card image" />
+                                </div>
+                                <div class="card-header">
+                                    <h2 class="card-heading">Apple iPhone X</h2>
+                                    <p class="card-subheading">by Apple California</p>
+                                </div>
+                                <div class="card-description">
+                                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-button-area">
+                                    <button class="card-button button-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> ADD TO CART
+                  </button>
+                                    <button class="card-button button-buy-now">
+                    BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                                </div>
+
+                                <div class="card-icons-area">
+                                    <div class="card-icon">
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Horizontal Card</p>
+                        <div class="card card-horizontal">
+                            <div class="card-icon card-wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="card-container">
+                                <div class="card-image-container">
+                                    <img class="card-image" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="card image" />
+                                </div>
+                                <div class="card-header">
+                                    <h2 class="card-heading">Apple iPhone X</h2>
+                                    <p class="card-subheading">by Apple California</p>
+                                    <div class="card-description">
+                                        Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                                        <div class="pl-xs pr-xs pt-sm pb-sm">Hurry Up! only 2 left in stock</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-button-area">
+                                    <button class="card-button button-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> ADD TO CART
+                  </button>
+                                    <button class="card-button button-buy-now">
+                    BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                                </div>
+
+                                <div class="card-icons-area">
+                                    <div class="card-icon">
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Text Overlay Card</p>
+                        <div class="card card-image-overlay">
+                            <div class="card-icon card-wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="card-container">
+                                <div class="card-image-container">
+                                    <!-- dadada -->
+                                    <img class="card-image" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="card image" />
+                                    <div class="card-header">
+                                        <h2 class="card-heading">Apple iPhone X</h2>
+                                        <p class="card-subheading">by Apple California</p>
+                                    </div>
+                                </div>
+
+                                <div class="card-description">
+                                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="card-button-area">
+                                    <button class="card-button button-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> ADD TO CART
+                  </button>
+                                    <button class="card-button button-buy-now">
+                    BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                                </div>
+
+                                <div class="card-icons-area">
+                                    <div class="card-icon">
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Card With Badges</p>
+                        <div class="card">
+                            <div class="card-badge">#1 Trending</div>
+                            <div class="card-icon card-wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="card-container">
+                                <div class="card-image-container">
+                                    <img class="card-image" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="card image" />
+                                </div>
+                                <div class="card-header">
+                                    <h2 class="card-heading">Apple iPhone X</h2>
+                                    <p class="card-subheading">by Apple California</p>
+                                </div>
+                                <div class="card-description">
+                                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-button-area">
+                                    <button class="card-button button-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> ADD TO CART
+                  </button>
+                                    <button class="card-button button-buy-now">
+                    BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                                </div>
+
+                                <div class="card-icons-area">
+                                    <div class="card-icon">
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Text only cards</p>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-image-container"></div>
+                                <div class="card-header">
+                                    <h2 class="card-heading">Apple iPhone X</h2>
+                                    <p class="card-subheading">by Apple California</p>
+                                </div>
+                                <div class="card-description">
+                                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Code Snipptes</h2>
+                <h4>Basic Card</h4>
+                <pre>
+            <code class="language-html">
               <div class="card">
                 <div class="card-icon card-wishlist">
                   <i class="far fa-heart"></i>
@@ -357,161 +523,205 @@
                   </div>
                 </div>
               </div>
+            </code>
+      </pre>
+
+                <h4>Horizontal card</h4>
+                <p>It's simple like adding <span class="code-highlight">card-horizontal</span> class to card</p>
+                <pre>
+        <code class="language-html">
+          <div class="card card-horizontal">
+            <div class="card-icon card-wishlist">
+              <i class="far fa-heart"></i>
             </div>
-            <div>
-              <p>Horizontal Card</p>
-              <div class="card card-horizontal">
-                <div class="card-icon card-wishlist">
-                  <i class="far fa-heart"></i>
-                </div>
 
-                <div class="card-container">
-                  <div class="card-image-container">
-                    <img
-                      class="card-image"
-                      src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
-                      alt="card image"
-                    />
-                  </div>
-                  <div class="card-header">
-                    <h2 class="card-heading">Apple iPhone X</h2>
-                    <p class="card-subheading">by Apple California</p>
-                    <div class="card-description">
-                      Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
-                      <div class="pl-xs pr-xs pt-sm pb-sm">Hurry Up! only 2 left in stock</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="card-button-area">
-                    <button class="card-button button-add-to-cart">
-                      <i class="fas fa-shopping-cart"></i> ADD TO CART
-                    </button>
-                    <button class="card-button button-buy-now">
-                      BUY NOW <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                  </div>
-
-                  <div class="card-icons-area">
-                    <div class="card-icon">
-                      <i class="fas fa-share-alt"></i>
-                    </div>
-                  </div>
-                </div>
+            <div class="card-container">
+              <div class="card-image-container">
+                <img
+                  class="card-image"
+                  src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                  alt="card image"
+                />
+              </div>
+              <div class="card-header">
+                <h2 class="card-heading">Apple iPhone X</h2>
+                <p class="card-subheading">by Apple California</p>
+              </div>
+              <div class="card-description">
+                Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
               </div>
             </div>
-            <div>
-              <p>Text Overlay Card</p>
-              <div class="card card-image-overlay">
-                <div class="card-icon card-wishlist">
-                  <i class="far fa-heart"></i>
-                </div>
-
-                <div class="card-container">
-                  <div class="card-image-container">
-                    <!-- dadada -->
-                    <img
-                      class="card-image"
-                      src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
-                      alt="card image"
-                    />
-                    <div class="card-header">
-                      <h2 class="card-heading">Apple iPhone X</h2>
-                      <p class="card-subheading">by Apple California</p>
-                    </div>
-                  </div>
-
-                  <div class="card-description">
-                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
-                  </div>
-                </div>
-
-                <div class="card-footer">
-                  <div class="card-button-area">
-                    <button class="card-button button-add-to-cart">
-                      <i class="fas fa-shopping-cart"></i> ADD TO CART
-                    </button>
-                    <button class="card-button button-buy-now">
-                      BUY NOW <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                  </div>
-
-                  <div class="card-icons-area">
-                    <div class="card-icon">
-                      <i class="fas fa-share-alt"></i>
-                    </div>
-                  </div>
-                </div>
+            <div class="card-footer">
+              <div class="card-button-area">
+                <button class="card-button button-add-to-cart">
+                  <i class="fas fa-shopping-cart"></i> ADD TO CART
+                </button>
+                <button class="card-button button-buy-now">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
               </div>
-            </div>
-            <div>
-              <p>Card With Badges</p>
-              <div class="card">
-                <div class="card-top-left-badge">
-                  #1 Trending
-                </div>
-                <div class="card-icon card-wishlist">
-                  <i class="far fa-heart"></i>
-                </div>
 
-                <div class="card-container">
-                  <div class="card-image-container">
-                    <img
-                      class="card-image"
-                      src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
-                      alt="card image"
-                    />
-                  </div>
-                  <div class="card-header">
-                    <h2 class="card-heading">Apple iPhone X</h2>
-                    <p class="card-subheading">by Apple California</p>
-                  </div>
-                  <div class="card-description">
-                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="card-button-area">
-                    <button class="card-button button-add-to-cart">
-                      <i class="fas fa-shopping-cart"></i> ADD TO CART
-                    </button>
-                    <button class="card-button button-buy-now">
-                      BUY NOW <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                  </div>
-
-                  <div class="card-icons-area">
-                    <div class="card-icon">
-                      <i class="fas fa-share-alt"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p>Text only cards</p>
-              <div class="card">
-
-                <div class="card-container">
-                  <div class="card-image-container">
-                  </div>
-                  <div class="card-header">
-                    <h2 class="card-heading">Apple iPhone X</h2>
-                    <p class="card-subheading">by Apple California</p>
-                  </div>
-                  <div class="card-description">
-                    Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
-                  </div>
+              <div class="card-icons-area">
+                <div class="card-icon">
+                  <i class="fas fa-share-alt"></i>
                 </div>
               </div>
             </div>
           </div>
+        </code>
+      </pre>
+
+                <h4>Text Overlay on Image</h4>
+                <p> simply add <span class="code-highlight">card-header</span> inside <span class="code-highlight">card-image-container </span></span>
+                </p>
+                <pre>
+              <code class="language-html">
+                <div class="card-badge">#1 Trending</div>
+                <div class="card">
+                  <div class="card-container">
+                    <div class="card-image-container">
+                      <img
+                        class="card-image"
+                        src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                        alt="card image"
+                      />
+                      <div class="card-header">
+                        <h2 class="card-heading">Apple iPhone X</h2>
+                        <p class="card-subheading">by Apple California</p>
+                      </div>
+                    </div>
+                    <div class="card-description">
+                      Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                    </div>
+                  </div>
+                </div>
+              </code>
+            </pre>
+                <h4>Card Badges</h4>
+                <p>simply add <span class="code-highlight">card-header</span> element into cards</p>
+                <pre>
+          <code class="language-html">
+            <div class="card-badge">#1 Trending</div>
+            <div class="card">
+              <div class="card-container">
+                <div class="card-image-container">
+                  <img
+                    class="card-image"
+                    src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg"
+                    alt="card image"
+                  />
+                </div>
+                <div class="card-header">
+                  <h2 class="card-heading">Apple iPhone X</h2>
+                  <p class="card-subheading">by Apple California</p>
+                </div>
+                <div class="card-description">
+                  Released 2017, November 03. 174g, 7.7mm thickness iOS 11.1.1, up to iOS 15.3
+                </div>
+              </div>
+            </div>
+          </code>
+        </pre>
+
+            </div>
+            <!-- end of card component  -->
+            <div class="component-container" id="image">
+                <h2>Responsive Images</h2>
+                <p>
+                    Responsive images are used to display images on devices with different screen sizes. You can use the <span class="code-highlight">img-fluid</span> class to make images responsive.
+                </p>
+
+
+
+                <pre>
+          <code class="language-html">
+            <img class="img-fluid" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="">
+          </code>
+        </pre>
+                <img class="img-fluid" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="">
+                <h2> Rounded Images</h2>
+                <p>
+                    You can use the <span class="code-highlight">img-rounded</span> class to make images rounded.
+                </p>
+                <pre>
+          <code class="language-html">
+            <img class="img-rounded" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="">
+          </code>
+        </pre>
+                <img class="img-rounded" src="https://as2.ftcdn.net/v2/jpg/04/86/21/35/1000_F_486213508_pB7Bws0xLcmv3CT2lQqC9eHZjQsQNquX.jpg" alt="">
+
+
+            </div>
+
+            <div class="component-container" id="input">
+                <h2>Responsive Input </h2>
+                <p>
+                    Responsive input is used to display input fields on devices with different screen sizes. You can use the <span class="code-highlight">form-input</span> class to make input fields responsive.
+                </p>
+                <div class="form-container">
+                    <form class="responsive-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="name" placeholder="username" aria-label="Username" autofocus />
+                            <label for="name" class="form-label">username</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" id="password" placeholder="password" aria-label="Password" />
+                            <label for="password" class="form-label">Password</label>
+                        </div>
+                    </form>
+                </div>
+                <h4> With Validation And error styles</h4>
+
+                <div class="form-container">
+                    <form class="responsive-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="name" placeholder="username" required aria-label="Username" autofocus />
+                            <div class="input-warning">input field invalid / required</div>
+                            <label for="name" class="form-label">username</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" id="password" placeholder="password" required aria-label="Password" />
+                            <div class="input-warning">input field invalid / required</div>
+                            <label for="password" class="form-label">Password</label>
+                        </div>
+                    </form>
+                </div>
+                <h3>Use below snippet in your code</h3>
+                <pre>
+                  <code class="language-html">
+                    <form class="responsive-form">
+                      <div class="form-group">
+                          <input type="text" class="form-input" id="name" placeholder="username" aria-label="Username" autofocus />
+                          <label for="name" class="form-label">username</label>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-input" id="password" placeholder="password" aria-label="Password" />
+                          <label for="password" class="form-label">Password</label>
+                      </div>
+                  </form>
+                  <!-- with validation -->
+                  <form class="responsive-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name" placeholder="username" required aria-label="Username" autofocus />
+                        <div class="input-warning">input field invalid / required</div>
+                        <label for="name" class="form-label">username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" id="password" placeholder="password" required aria-label="Password" />
+                        <div class="input-warning">input field invalid / required</div>
+                        <label for="password" class="form-label">Password</label>
+                    </div>
+                </form>
+                  </code>
+                </pre>
+            </div>
         </div>
-        <!-- end of card component  -->
-      </div>
-      <!-- end of sections-container -->
-      <!-- end of .main-container -->
+        <!-- end of sections-container -->
+        <!-- end of .main-container -->
     </div>
     <script src="../scripts/index.js"></script>
-  </body>
+</body>
+
+</html>
+
 </html>

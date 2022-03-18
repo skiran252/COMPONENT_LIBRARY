@@ -270,7 +270,7 @@
 .card-icon:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
-    color: #6200ee;
+    color: #ffffff;
 }
 
 .card-horizontal>.card-body {
@@ -282,7 +282,7 @@
     height: 100%;
 }
 
-.card .card-top-left-badge {
+.card .card-badge {
     position: absolute;
     top: 0.25rem;
     left: 0.25rem;
