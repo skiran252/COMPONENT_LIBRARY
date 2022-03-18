@@ -9,6 +9,7 @@
 @import url(./components/list.css);
 @import url(./utilities/colors.css);
 @import url(./utilities/spacing.css);
+@import url(./utilities/flex.css);
 :root {
     --border-gray: #e9ecef;
 }

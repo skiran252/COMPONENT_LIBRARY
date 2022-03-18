@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.flex-row {
+    flex-direction: row;
+    width: 100%;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-col-2 {
+    flex-basis: 50%;
+}
+
+.flex-gap-small {
+    gap: var(--padding-small);
+}
+.flex-gap-medium {
+    gap: var(--padding-medium);
+}
