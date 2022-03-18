@@ -1,0 +1,39 @@
+.ratings {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.full-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #304ffd;
+}
+
+.empty-stars:before,
+.full-stars:before {
+  content: "\2605\2605\2605\2605\2605";
+  font-size: 1.5rem;
+}
+
+.empty-stars:before {
+  -webkit-text-stroke: 1px #b3b3b3;
+}
+
+.full-stars:before {
+  -webkit-text-stroke: 1px #304ffd;
+}
+
+.rating-number {
+  background-color: #304ffd;
+  color: white;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  border-radius: var(--border-radius-small);
+  font-weight: bold;
+}
