@@ -2,3 +2,13 @@
 @import url(./components/avatar.css);
 @import url(./components/badge.css);
 @import url(./components/buttons.css);
+@import url(./components/card.css);
+@import url(./components/image.css);
+@import url(./components/input.css);
+@import url(./components/text-utilities.css);
+@import url(./components/list.css);
+@import url(./utilities/colors.css);
+@import url(./utilities/spacing.css);
+:root {
+    --border-gray: #e9ecef;
+}
