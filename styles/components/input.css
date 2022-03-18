@@ -1,15 +1,7 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-size: 62, 5%;
-}
 
 .form-container {
     width: 100%;
-    background-color: rgb(255, 241, 219);
+    background-color: #DCDCDC;
 }
 
 .responsive-form {

@@ -8,7 +8,7 @@
 @import url(./components/card.css);
 @import url(./components/image.css);
 @import url(./components/input.css);
-
+@import url(./components/text-utilities.css);
 h3 {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
     text-align: left;
@@ -79,7 +79,6 @@ html {
     overflow-y: scroll;
 }
 
-
 .docs-layout .main-container::-webkit-scrollbar {
     width: 10px;
 }
@@ -128,6 +127,7 @@ html {
     flex-basis: 80%;
 }
 
+
 /* containers */
 
 .avatars-container {
@@ -153,42 +153,38 @@ html {
     gap: 1rem;
 }
 
+
 /* end of containers */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    :root {
-        font-size: 0.8rem;
+     :root {
+        font-size: 1rem;
     }
 }
 
 
 /* media queries */
+
 @media screen and (max-width: 768px) {
     .docs-layout {
         flex-direction: column;
     }
-
     .docs-layout aside {
         flex-basis: 0;
         height: auto;
         border-right: none;
     }
-
     .docs-layout .main-container {
         padding: 1rem;
         border-right: none;
         overflow-y: scroll;
     }
-
     .docs-navbar-list .docs-navbar-item {
         margin: 0.5rem 0;
     }
-
-
     .docs-layout main {
         flex-basis: 95%;
     }
-
     .docs-layout {
         padding: 0 2rem;
     }
@@ -199,7 +195,9 @@ html {
     display: inline-block;
 }
 
+
 /* Tooltip text */
+
 .tooltip .tooltiptext {
     font-size: var(--font-size-extra-small);
     visibility: hidden;
@@ -212,7 +210,9 @@ html {
     z-index: 1;
 }
 
+
 /* Show the tooltip text when you mouse over the tooltip container */
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }

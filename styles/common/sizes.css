@@ -13,18 +13,18 @@
     --margin-extra-large: 2rem;
 
     /* variables for different sizes of font sizes */
-    --font-size-extra-small: 0.75rem;
+    --font-size-extra-small: 0.5rem;
     --font-size-small: 1rem;
-    --font-size-medium: 1.2rem;
-    --font-size-large: 1.5rem;
-    --font-size-extra-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+    --font-size-extra-large: 3rem;
 
     /* variables for different sizes of line heights */
-    --line-height-extra-small: 1.2rem;
+    --line-height-extra-small: 1rem;
     --line-height-small: 1.5rem;
-    --line-height-medium: 1.8rem;
-    --line-height-large: 2rem;
-    --line-height-extra-large: 2.5rem;
+    --line-height-medium: 2rem;
+    --line-height-large: 2.5rem;
+    --line-height-extra-large: 4rem;
 
     /* variables for different sizes of font weights */
     --font-weight-extra-light: 100;

@@ -1,3 +1,6 @@
+:root {
+    --text-gray: #737373;
+}
 /* declare all colors for text and bg */
 .text-primary {
     color: #007bff;
