@@ -21,3 +21,23 @@ document.addEventListener("click", function (event) {
     prevTarget = event.target;
   }
 });
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("modalButton");
+const closeButton = document.getElementsByClassName("modal-close")[0];
+const innerCloseButton = document.getElementsByClassName("close-button")[0];
+btn.onclick = function () {
+  modal.classList.add("modal-show");
+};
+closeButton.onclick = function () {
+  modal.classList.remove("modal-show");
+};
+
+innerCloseButton.onclick = function () {
+  modal.classList.remove("modal-show");
+};
+window.onclick = function (event) {
+  console.log('model clicked');
+  if (event.target == modal) {
+    modal.classList.remove("modal-show");
+  }
+};

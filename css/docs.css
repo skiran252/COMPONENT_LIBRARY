@@ -98,13 +98,12 @@ html {
 }
 
 .docs-layout .main-container .component-container h4 {
-    font-size: 1.5rem;
     font-weight: 100;
     margin: 0.5rem 0;
 }
 
 .docs-layout .main-container .component-container p {
-    font-size: large;
+    font-size: medium;
     line-height: 2rem;
     text-align: left;
 }
@@ -115,7 +114,6 @@ html {
     padding: 0.25rem;
     border-radius: 0.25rem;
 }
-
 .docs-layout main {
     flex-basis: 80%;
 }

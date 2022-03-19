@@ -1,7 +1,14 @@
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
 .ratings {
   position: relative;
   display: inline-block;
-  vertical-align: center;
   overflow: hidden;
   color: white;
 }
@@ -12,13 +19,13 @@
   top: 0;
   white-space: nowrap;
   overflow: hidden;
-  color: #304ffd;
+  color: #ffab4a;
 }
 
 .empty-stars:before,
 .full-stars:before {
   content: "\2605\2605\2605\2605\2605";
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
 .empty-stars:before {
@@ -26,14 +33,14 @@
 }
 
 .full-stars:before {
-  -webkit-text-stroke: 1px #304ffd;
+  -webkit-text-stroke: 1px #ffab4a;
 }
 
 .rating-number {
-  background-color: #304ffd;
-  color: white;
-  padding: 0.25rem;
-  font-size: 1.5rem;
-  border-radius: var(--border-radius-small);
+  background-color: #ffab4a;
+  color: rgb(0, 0, 0);
+  padding: 0 0.25rem;
+  font-size: 0.8rem;
+  border-radius: var(--border-radius-extra-small);
   font-weight: bold;
 }

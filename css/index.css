@@ -12,6 +12,7 @@
 @import url(./utilities/flex.css);
 @import url(./components/navigation.css);
 @import url(./components/rating.css);
+@import url(./components/modal.css);
 :root {
     --border-gray: #e9ecef;
 }
