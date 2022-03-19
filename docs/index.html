@@ -79,6 +79,10 @@
                     <li class="docs-navbar-item">
                         <a class="navbar-link" href="#modal">Modal</a>
                     </li>
+
+                    <li class="docs-navbar-item">
+                        <a class="navbar-link" href="#toastComponent">Toast </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -86,9 +90,10 @@
             <h1 id="getting_started">Getting Started</h1>
             <p>To use the library add below snippet to your code</p>
             <pre>
-            <code class="language-html">
-                <link rel="stylesheet" href="https://lazy-ui.netlify.app/styles/index.css"/>
-            </code>
+<code class="language-html">
+    <link rel="stylesheet" href="https://lazy-ui.netlify.app/css/index.css"/>
+    <script src="https://lazy-ui.netlify.app/javascript/index.js"></script>
+</code>
         </pre>
 
             <div class="component-container" id="alert">
@@ -1086,7 +1091,7 @@
                         <div class="full-stars" style="width: 70%;"></div>
                     </div>
                 </div>
-                
+
                 <pre>
 <code class="language-html">
     <div class="rating-container">
@@ -1133,7 +1138,7 @@
                     </div>
                 </div>
                 <p>Here's how you can use it</p>
-            <pre>
+                <pre>
 <code class="language-html">
     <div class="modal" id="myModal">
         <div class="modal-content">
@@ -1166,6 +1171,23 @@
     </div>
 </code>
             </pre>
+            </div>
+
+            <div class="component-container" id="toastComponent">
+                <h2>Toast</h2>
+                <p>A toast is a small notification that appears at the bottom of the screen. </p>
+                <button class="btn btn-primary" id="toast-button">Open Toast</button>
+                <div class="toast-container" id="toastContainer">
+                    <div class="toast-message">
+                        <div class="toast-message-header">
+                            <h3>New Message Alert</h3>
+                            <span class="toast-close">&times;</span>
+                        </div>
+                        <div class="toast-message-body">
+                            <p>We've detected a suspicious login attempt from a new location</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end of sections-container -->

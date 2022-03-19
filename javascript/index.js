@@ -36,8 +36,25 @@ innerCloseButton.onclick = function () {
   modal.classList.remove("modal-show");
 };
 window.onclick = function (event) {
-  console.log('model clicked');
+  console.log("model clicked");
   if (event.target == modal) {
     modal.classList.remove("modal-show");
   }
 };
+
+const toastListener = () => {
+  const toast = document.getElementById("toastContainer");
+  const toastClose = document.getElementById("toast-close");
+  const toastButton = document.getElementById("toast-button");
+  toastButton.addEventListener("click", () => {
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  });
+  toastClose.addEventListener("click", () => {
+    toast.classList.remove("show");
+  });
+  
+};
+toastListener();
