@@ -97,11 +97,6 @@ html {
     margin: 0.5rem 0;
 }
 
-.docs-layout .main-container .component-container h4 {
-    font-weight: 100;
-    margin: 0.5rem 0;
-}
-
 .docs-layout .main-container .component-container p {
     font-size: medium;
     line-height: 2rem;

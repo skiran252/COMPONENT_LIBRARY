@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-demo-item {
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.gap-xs {
+    gap: var(--padding-extra-small);
+}
+
+.gap-sm {
+    gap: var(--padding-small);
+}
